@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="multi_add.php" method="post">
+    <div>
+        <label>Full Name: </label>
+        <input type="text" name="full_name" />
+    </div>
+    <br>
+    <div>
+        <label>Hobby: </label>
+        <div>
+            <input type="checkbox" name="hobby[]" value="Reading Book">Reading Book<br />
+            <input type="checkbox" name="hobby[]" value="Travelling">Travelling<br />
+            <input type="checkbox" name="hobby[]" value="Programming">Programming<br />
+            <input type="checkbox" name="hobby[]" value="Games">Games<br />
+        </div>
+    </div>
+
+    <br>
+    <div>
+        <label>Favorite Food: </label>
+        <div>
+            <input type="checkbox" name="food_1" value="Food1">Food1<br />
+            <input type="checkbox" name="food_2" value="Food2">Food2<br />
+            <input type="checkbox" name="food_3" value="Food3">Food3<br />
+            <input type="checkbox" name="food_4" value="Food4">Food4<br />
+        </div>
+    </div>
+    <br>
+    <div>
+        <label>Preferred Job Location: </label>
+        <br>
+        <div>
+            <br>
+            <select name="cities[]" multiple="multiple">
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Jshore">Jshore</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Borishal">Borishal</option>
+                <option value="Comilla">Comilla</option>
+                <option value="Dinajpur">Dinajpur</option>
+                <option value="Faridpur">Faridpur</option>
+                <option value="Narayangonj">Narayangonj</option>
+                <option value="Rangamati">Rangamati</option>
+                <option value="Kagrachori">Kagrachori</option>
+                <option value="Jorachori">Jorachori</option>
+                <option value="Noakhali">Noakhali</option>
+                <option value="Bbaria">Bbaria</option>
+                <option value="city16">city16</option>
+                <option value="City17">City17</option>
+                <option value="city18">city18</option>
+                <option value="city19">city19</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <input type="hidden" name="created" />
+    </div>
+    <div>
+        <input type="hidden" name="modified" />
+    </div>
+    <div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </div>
+</form>
+<br>
+<a href="multi_list.php"><b>Go To List</b></a>
+</body>
+</html>
