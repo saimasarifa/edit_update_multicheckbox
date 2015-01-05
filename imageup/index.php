@@ -8,7 +8,7 @@
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimu",
+    "lict@2",
     "students");
 
 $file=$_FILES['myfile']['tmp_name'];

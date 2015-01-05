@@ -1,5 +1,5 @@
 <?php
-mysql_connect("localhost","root","shimu");
+mysql_connect("localhost","root","lict@2");
 mysql_select_db("students");
 
 

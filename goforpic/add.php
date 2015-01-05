@@ -1,6 +1,6 @@
 <?php
 if (isset ($_POST['submit'])){
-    mysql_connect("localhost","root","shimu");
+    mysql_connect("localhost","root","lict@2");
     mysql_select_db("students");
     $imageName= mysql_real_escape_string($_FILES['myfile']['name']);
     //print_r($_FILES['myfile']);

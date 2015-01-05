@@ -7,8 +7,9 @@
 
 <?php
 if (isset ($_POST['submit'])){
-    mysql_connect("localhost","root","shimu");
+    mysql_connect("localhost","root","lict@2");
     mysql_select_db("students");
+
     $imageName= mysql_real_escape_string($_FILES['myfile']['name']);
     //print_r($_FILES['myfile']);
     $imageData=mysql_real_escape_string(file_get_contents($_FILES['myfile']['tmp_name']));
@@ -23,4 +24,4 @@ if (isset ($_POST['submit'])){
     }
 }
 ?>
-<img src="showimage.php?id= 45">
+<img src="showimage.php?id= 1">

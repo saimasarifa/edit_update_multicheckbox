@@ -3,7 +3,7 @@
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimu",
+    "lict@2",
     "students");
 
 $id= $_REQUEST['id'];
